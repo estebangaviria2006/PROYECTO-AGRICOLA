@@ -1,0 +1,8 @@
+body {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background-image: url(../img/estesi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

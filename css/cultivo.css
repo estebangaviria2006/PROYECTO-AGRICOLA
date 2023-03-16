@@ -1,0 +1,11 @@
+body {
+    background-image: url(../img/produccion.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.imagen {
+    margin-left: 500px;
+    height: 340px;
+}

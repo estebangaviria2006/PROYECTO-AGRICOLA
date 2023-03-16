@@ -1,22 +1,79 @@
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+    background-image: url("../img/inter.jpg");
+    background-attachment: fixed;
+    font-family: 'Crimson Text',sans-serif;
+}
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container-all {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.863);
+    margin-top: 100px;
+}
+
+.sub-title {
+    margin-top: 0px;
+    font-size: 70px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.container-all img{
+    width: 520px;
+    height: 600px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 h1 {
 
     color: red;
-    font-size: 50px;
+    font-size: 40px;
 }
 
-p {
-    color: rgb(0, 0, 0);
+p{
     font-size: 25px;
-
 }
-
 a {
     font-size: 35px;
 }
+
+li {
+    margin-left: 300px;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* crimson-text-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/crimson-text-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/crimson-text-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/crimson-text-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/crimson-text-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/crimson-text-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/crimson-text-v19-latin-regular.svg#CrimsonText') format('svg'); /* Legacy iOS */
+  }

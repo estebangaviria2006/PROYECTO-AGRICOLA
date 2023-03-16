@@ -1,0 +1,17 @@
+body {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    background-image: url(../img/portada1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+}
