@@ -5,7 +5,7 @@ function getFicha(){
     document.getElementById("resproduct").innerText=producto
 
     let linea = document.getElementById("linea").value 
-    document.getElementById("resproducto").innerText=linea
+    document.getElementById("resproductoo").innerText=linea
 
     let versiones = document.getElementById("versiones").value 
     document.getElementById("resproduc").innerText=versiones
