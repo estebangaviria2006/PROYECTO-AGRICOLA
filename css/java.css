@@ -1,0 +1,21 @@
+body{
+    background-color: dodgerblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    border: none;
+}
+
+input{
+    border: none;
+}
+
+h4{
+    display: inline-block;
+    color: aliceblue;
+}
