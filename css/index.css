@@ -1,5 +1,5 @@
 body {
-    font-size: 4em;
+    font-size: 3em;
     color: rgb(0, 0, 0);
     background-image: url("../img/portada1.jpg");
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
 
 .container-all img{
     width: 520px;
-    height: 700px;
+    height: 650px;
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
