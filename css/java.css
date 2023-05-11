@@ -1,9 +1,6 @@
 body{
-    background-image: url(../img/colores.webp);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: darkseagreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1{
@@ -12,6 +9,7 @@ h1{
 
 button{
     border: none;
+    cursor: pointer;
 }
 
 input{
