@@ -1,0 +1,16 @@
+entero numero1, numero2, Total
+
+inicio
+	Escriba "Escriba 1 numero"
+	llamar nueva_linea
+	lea numero1
+	llamar nueva_linea
+	Escriba "Escriba otro numero"
+	llamar nueva_linea
+	lea numero2
+	llamar nueva_linea
+	Escriba "Los numeros leidos fueron: ", numero1, "y", numero2
+	Total <- numero1+numero2
+	llamar nueva_linea 
+	Escriba "La suma de los numeros es de: ", Total
+fin

@@ -1,0 +1,28 @@
+entero Calificacion1, Calificacion2, Calificacion3, Calificacion4, Calificacion5, Calificaciones, TrabajoF, ExamenF, Total
+
+inicio
+	Escriba "Escriba sus 3 calificaciones"
+	llamar nueva_linea
+	lea Calificacion1
+	llamar nueva_linea
+	lea Calificacion2
+	llamar nueva_linea
+	lea Calificacion3
+	Escriba "Escriba la nota de su Examen Final"
+	llamar nueva_linea
+	lea Calificacion4
+	llamar nueva_linea
+	Escriba "Escriba la nota de su trabajo final"
+	llamar nueva_linea
+	lea Calificacion5
+	llamar nueva_linea
+	Calificaciones <- ((Nota1+Nota2+Nota3)/3)*0.55
+	llamar nueva_linea
+	TrabajoF <- Nota4*0.30
+	llamar nueva_linea
+	ExamenF <- Nota5*0.15
+	llamar nueva_linea
+	Total <- Calificaciones+TrabajoF+ExamenF
+	llamar nueva_linea
+	Escriba "La Calificación final sera de: ",Total
+fin

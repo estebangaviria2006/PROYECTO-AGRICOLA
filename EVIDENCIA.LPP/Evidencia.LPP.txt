@@ -1,0 +1,73 @@
+Escriba un algoritmo que solicite su nombre y apellido por teclado, almacénelos en
+variables diferentes, posteriormente imprímalos por pantalla en una sola línea con el
+mensaje “BIENVENIDO nombre y apellido
+
+ cadena [30] nombre,apellido
+inicio 
+escriba " deposite Nombre "
+lea nombre
+llamar nueva_linea 
+escriba " deposite su Apellido "
+lea apellido
+llamar nueva_linea
+escriba " HOLAAAA ", nombre,"",apellido
+fin
+
+. Escriba un algoritmo que le permita ingresar dos números enteros por el teclado,
+posteriormente calcule la suma e imprima los números leídos y el resultado de la suma.
+
+entero n1,n2,total
+inicio
+escriba " ingrese primer dato "
+lea n1
+llamar nueva_linea
+escriba " ingrese segundo dato "
+lea n2
+total <- (n1+n2)
+llamar nueva_linea
+escriba " el resultado de " ,n1 ," + " , n2 ," es = " ,total
+fin
+
+Escriba un algoritmo que le permita ingresar dos números enteros por el teclado,
+posteriormente calcule la suma, la resta y la multiplicación de los dos números e imprima
+los números leídos y los resultados de las tres operaciones.
+
+entero suma,resta,multiplicacion,n1,n2
+inicio
+escriba " Ingrese primer dato "
+lea n1
+llamar nueva_linea
+escriba " Ingrese segundo dato "
+lea n2
+suma <- (n1+n2)
+resta <- (n1-n2)
+multiplicacion <- (n1*n2)
+llamar nueva_linea
+escriba " la suma de ",n1,"+",n2," es = ",suma
+llamar nueva_linea
+escriba " la resta de ",n1,"-",n2," es = ",resta
+llamar nueva_linea
+escriba " la suma de ",n1,"*",n2," es = ",multiplicacion
+fin
+
+Una empresa está realizando un aumento del 15% al sueldo base de sus trabajadores,
+escriba un algoritmo que solicite el nombre de un trabajador y su sueldo base, a
+continuación, el algoritmo debe calcular el aumento y el valor final a pagar al trabajador.
+
+entero aumento,valorF,base
+cadena [30] nombre
+inicio
+escriba " cual es tu nombre "
+lea nombre
+llamar nueva_linea
+escriba " deposite su salario base "  
+lea base
+aumento <- (base*0.15)
+valorF <- (aumento+base)
+llamar nueva_linea
+escriba " Señor " ,nombre
+llamar nueva_linea
+escriba " el aumento de su sueldo es ",aumento
+llamar nueva_linea
+escriba " el total de su pago debe ser de " ,valorF
+fin
