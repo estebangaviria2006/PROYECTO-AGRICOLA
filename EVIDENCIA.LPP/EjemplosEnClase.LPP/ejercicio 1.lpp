@@ -1,9 +1,0 @@
-cadena [20]Nombre
-
-inicio
-	Escriba "Cual es tu nombre?"
-	Llamar nueva_linea
-	lea Nombre
-	Llamar nueva_linea
-	Escriba "Hola ", Nombre
-fin
