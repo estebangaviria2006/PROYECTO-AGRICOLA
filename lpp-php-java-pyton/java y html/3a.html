@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function obtenerAlturaEIniciales() {
+       
+        const alturaMetros = parseInt(prompt("Ingrese su altura en metros:"));
+        const alturaCentimetros = parseInt(prompt("Ingrese su altura en centímetros:"));
+   
+       
+        const iniciales = prompt("Ingrese sus iniciales:");
+   
+       
+        alert(`Sus iniciales son: ${iniciales.toUpperCase()} y su altura ${alturaMetros} metro${alturaMetros === 1 ? '' : 's'} y ${alturaCentimetros} centimetro${alturaCentimetros === 1 ? '' : 's'}`);
+    }
+   
+   
+    obtenerAlturaEIniciales();
+</script>
+</body>
+</html>

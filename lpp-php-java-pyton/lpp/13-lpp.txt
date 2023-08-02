@@ -1,0 +1,49 @@
+13. Realizar un programa que capture los datos de un empleado:
+Nombre, Genero (1-masculino, 2-femenino), Salario b�sico, y tiempo de servicio.
+El sistema debe calcular el valor de la bonificaci�n anual en base a los siguientes
+lineamientos de la empresa:
+Si es mujer y el tiempo de servicio es superior a 5 a�os, su bonificaci�n ser� de un 20% del
+Salario b�sico
+Si es mujer y el tiempo de servicio es inferior o igual a 5 a�os, su bonificaci�n ser� de un
+15% del Salario b�sico
+Si es hombre y el tiempo de servicio es superior a 6 a�os, su bonificaci�n ser� de un 20% del
+Salario B�sico.
+Si es hombre y el tiempo de servicio est� entre 1 y 6 a�os su bonificaci�n ser� de un 15%
+del Salario B�sico.
+
+cadena [60] nombre, genero
+entero sueldo,tiempo,aumen15,aumen20
+
+inicio
+Escriba "Ingrese su nombre: "
+lea nombre
+Llamar nueva_linea
+Escriba "Ingrese su genero: "
+lea genero
+Llamar nueva_linea
+Escriba "Ingrese su sueldo base: "
+lea sueldo
+Llamar nueva_linea
+Escriba "Ingrese el tiempo que lleva en la empresa: "
+lea tiempo
+
+aumen15<- sueldo*0.15+sueldo
+aumen20<- sueldo*0.20+sueldo
+
+
+si genero = "masculino" entonces
+si tiempo > 6 entonces
+Escriba "su bonificacion es de un 20% su sueldo base ahora queda en: ",aumen20
+sino
+Escriba "su bonificacion es de un 15% su sueldo base ahora queda en: ",aumen15
+fin si
+sino
+si genero = "femenino" entonces
+si tiempo > 5 entonces
+Escriba "su bonificacion es de un 20% de su sueldo base ahora queda en: ",aumen20
+sino
+Escriba "su bonificacion es de un 15% de su sueldo base ahora queda en: ",aumen15
+fin si
+fin si
+
+fin si

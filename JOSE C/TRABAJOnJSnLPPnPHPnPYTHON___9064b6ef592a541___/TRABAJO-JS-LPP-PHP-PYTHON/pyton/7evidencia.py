@@ -1,13 +1,20 @@
-sueldo_inicial = int(input("Ingrese el sueldo inicial del trabajador: "))
+sueldo = float(input("Ingrese su sueldo: "))
 
-if sueldo_inicial <= 500000:
-    descuento = sueldo_inicial * 0.12
-elif sueldo_inicial <= 1000000:
-    descuento = sueldo_inicial * 0.15
-else:
-    descuento = sueldo_inicial * 0.18
+if sueldo <= 500000 and sueldo > 0:
+    descuento1 = (sueldo*0.12)
+    total1 = sueldo - descuento1
+    print("El descuento es de: $",(descuento1))
+    print("El sueldo total que recibira sera de: $",(total1))
+elif sueldo > 500000 and sueldo <= 1000000:
+    descuento2 = (sueldo*0.15)
+    total2 = sueldo - descuento2
+    print("El descuento es de: $",(descuento2))
+    print("El sueldo total que recibira sera de: $",(total2))
+elif sueldo > 1000000:
+    descuento3 = (sueldo*0.18)
+    total3 = sueldo - descuento3
+    print("El descuento es de: $",(descuento3))
+    print("El sueldo total que recibira sera de: $",(total3))
 
-sueldo_total = sueldo_inicial - descuento
-
-print("Descuento: ", descuento)
-print("Sueldo total: ", sueldo_total)
+if sueldo <= 0:
+    print("Error, es numero negativo")

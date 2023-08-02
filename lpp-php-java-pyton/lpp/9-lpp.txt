@@ -1,0 +1,13 @@
+9. Escribe un programa que pida al usuario que introduzca los segundos, y le conteste
+dici�ndole el n�mero de d�as, horas, minutos y segundos que son.
+
+
+entero seg, min, hora, dia
+inicio
+escriba " introduzca los segundos a convertir en minutos, horas, dias "
+lea seg
+dia <- seg/60/60/24
+hora <- seg/60/60
+min <- seg/60
+escriba "los segundos ", seg, "ingresados son: ",dia," dias ", hora," horas ", min, " minutos"
+fin

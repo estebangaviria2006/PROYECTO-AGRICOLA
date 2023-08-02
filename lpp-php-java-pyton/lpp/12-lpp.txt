@@ -1,0 +1,27 @@
+
+12. Realizar un login de usuario, solicitando el correo y la contrase�a, si el
+correo=�fund@gmail.com� y la clave=�123456�, el sistema mostrar� el mensaje �Bienvenidos
+a Fundamentos de programaci�n�, si los datos son inv�lidos el sistema deber� mostrar
+�Error en los datos de ingreso.�
+
+cadena [40] correo,clave
+
+inicio
+Escriba "Ingrese su correo: "
+lea correo
+Llamar nueva_linea
+Escriba "Ingrese su clave: "
+lea clave
+Llamar nueva_linea
+
+si correo = "munozleandro343@gmail.com" entonces
+si clave = "123456"entonces
+Escriba "Bienvenidos a fundamentos de la programacion"
+sino
+Escriba "clave erronea"
+fin si
+sino
+escriba "correo erroneo"
+
+fin si
+fin 
