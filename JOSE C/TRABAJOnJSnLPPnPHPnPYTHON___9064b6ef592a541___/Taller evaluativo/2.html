@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <h1>Comercializadora de telefonos</h1>
+    <form id="formulario">
+        <label for="marca">Marca del telefono:</label>
+        <select id="marca">
+            <option value="1">Telefono Samsung</option>
+            <option value="2">Telefono Motorola</option>
+            <option value="3">Telefono Huawei</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="1" required>
+
+        <button type="submit">Agregar</button>
+    </form>
+
+    <div id="resultados">
+        <h2>Total:</h2>
+        <div id="resultadoSamsung"></div>
+        <br>
+        <div id="resultadoMotorola"></div>
+        <br>
+        <div id="resultadoHuawei"></div>
+    </div>
+
+    <script src="2.js"></script>
+</body>
+</html>
