@@ -17,3 +17,4 @@ function calcular() {
         mensaje = document.getElementById("res");
         mensaje.innerHTML = "NO APROBADO EL SUELO";
     }
+}
