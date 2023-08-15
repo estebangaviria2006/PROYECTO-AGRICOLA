@@ -22,7 +22,7 @@ while True:
     else:
         print("Ingresa solo texto,Inténtalo de nuevo.")
 
-# Solicitar precio, asegurarse de que no sea negativo 
+
 while True:
     try:
         valor_producto = float(input("Ingrese el precio: "))
@@ -33,7 +33,7 @@ while True:
     except ValueError:
         print("Ingresa un valor numérico válido.")
 
-# Solicitar cantidad, asegurarse de que no sea negativa
+
 while True:
     try:
         cantidad_producto= int(input("Ingrese la cantidad de productos: "))
@@ -43,12 +43,12 @@ while True:
             print("Ingresa un valor positivo, Inténtalo de nuevo.")
     except ValueError:
         print("Ingresa un valor numérico válido.")
-# Calcular los valores requeridos
+
 valor_total = valor_producto * cantidad_producto
-descuento = valor_total * 0.175  # Descuento del 17.5%
+descuento = valor_total * 0.175  
 valor_total_descuento = valor_total - descuento
 
-# Imprimir la factura de venta
+
 print("--------------------------------------------------")
 print("Factura de Venta")
 print("Fecha:", fecha_actual)
