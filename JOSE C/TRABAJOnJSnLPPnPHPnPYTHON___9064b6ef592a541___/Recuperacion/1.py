@@ -1,64 +1,65 @@
-
+import datetime
+fecha_actual = datetime.date.today()
 while True:
-    ciudad = input("Ingrese ciudad de residencia: ")
+    ciudad = input("Ciudad:")
     if ciudad.isalpha():
         break
     else:
-        print("Ingresa solo texto para la ciudad. Inténtalo de nuevo.")
+        print("Ingresa solo texto,Inténtalo de nuevo.")
+
 
 while True:
-    fecha = input("Ingrese fecha: ")  # Puedes validar la fecha de manera más específica si es necesario
-    if fecha:
+    nombre_cliente = input("Ingrese su nombre: ")
+    if nombre_cliente.isalpha():
         break
     else:
-        print("Ingresa una fecha válida. Inténtalo de nuevo.")
+        print("Ingresa solo texto,Inténtalo de nuevo.")
 
 while True:
-    nombre = input("Ingrese su nombre: ")
-    if nombre.isalpha():
+    nombre_producto = input("Ingrese nombre del producto: ")
+    if nombre_producto.isalpha():
         break
     else:
-        print("Ingresa solo texto para el nombre. Inténtalo de nuevo.")
+        print("Ingresa solo texto,Inténtalo de nuevo.")
 
+# Solicitar precio, asegurarse de que no sea negativo 
 while True:
-    producto = input("Ingrese el nombre del producto: ")
-    if producto.isalpha():
-        break
-    else:
-        print("Ingresa solo texto para el producto. Inténtalo de nuevo.")
-
-# Solicitar precio, asegurarse de que sea un número positivo
-while True:
-    precio = float(input("Ingrese el precio del producto: "))
-    if precio > 0:
-        break
-    else:
-        print("Ingresa un precio válido (positivo). Inténtalo de nuevo.")
+    try:
+        valor_producto = float(input("Ingrese el precio: "))
+        if valor_producto >= 0:
+            break
+        else:
+            print("Ingresa un valor positivo,Inténtalo de nuevo.")
+    except ValueError:
+        print("Ingresa un valor numérico válido.")
 
 # Solicitar cantidad, asegurarse de que no sea negativa
 while True:
-    cantidad = int(input("Ingrese la cantidad de productos: "))
-    if cantidad >= 0:
-        break
-    else:
-        print("Ingresa una cantidad válida (no negativa). Inténtalo de nuevo.")
+    try:
+        cantidad_producto= int(input("Ingrese la cantidad de productos: "))
+        if cantidad_producto>= 0:
+            break
+        else:
+            print("Ingresa un valor positivo, Inténtalo de nuevo.")
+    except ValueError:
+        print("Ingresa un valor numérico válido.")
+# Calcular los valores requeridos
+valor_total = valor_producto * cantidad_producto
+descuento = valor_total * 0.175  # Descuento del 17.5%
+valor_total_descuento = valor_total - descuento
 
-# Calcular total antes de aplicar descuento
-total = precio * cantidad
-
-# Calcular descuento
-descuento = total * 0.175  # 17.5% de descuento
-
-# Calcular total con descuento
-total_con_descuento = total - descuento
-
-print("================================================")
-print("FACTURA")
-
-# Mostrar detalles de la factura
-print("Ciudad:", ciudad, "\nFecha:", fecha)
-print("Nombre:", nombre, "\nProducto:", producto, "\nValor del producto:", precio)
-print("Cantidad:", cantidad)
-print("Valor total:", total)
-print("Valor del descuento:", descuento)
-print("Valor total con descuento:", total_con_descuento)
+# Imprimir la factura de venta
+print("--------------------------------------------------")
+print("Factura de Venta")
+print("Fecha:", fecha_actual)
+print("Ciudad:", ciudad)
+print("nombre cliente:", nombre_cliente)
+print("--------------------------------------------------")
+print("nombre Producto:", nombre_producto)
+print("Valor Unitario:", valor_producto)
+print("Cantidad:", cantidad_producto)
+print("--------------------------------------------------")
+print("Subtotal:", valor_total)
+print("Descuento:", descuento)
+print("Total con Descuento:", valor_total_descuento)
+print("--------------------------------------------------")
