@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 1 </title>
+    <script src="ejer2.js"></script>
+</head>
+<body>
+
+    <h1>Verificador de Anemia</h1>
+    <span>Seleccione su edad o género: </span>
+    <select id="edad" required>
+        <option value="">Seleccionar...</option>
+        <option value="0-1">0 - 1 mes</option>
+        <option value="1-6"> 1 y 6 meses</option>
+        <option value="6-12"> 6 y 12 meses</option>
+        <option value="1-5"> 1 y 5 años</option>
+        <option value="5-10"> 5 y 10 años</option>
+        <option value="10-15"> 10 y 15 años</option>
+        <option value="femenino"> Mujeres > 15 años</option>
+        <option value="masculino"> Hombres > 15 años</option>
+    </select><br><br>
+    <span>Escribe su nivel de hemoglobina: </span>
+    <input step="any" type="number" id="hemoglobina" placeholder="Hemoglobina" required><br><br>
+    <button type="submit" onclick="validar()"> Validar </button>
+    <p id="resp"></p>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- Una empresa comercializadora de teléfonos celulares requiere un prototipo de software,
+que permita al usuario leer el valor de venta y marca de celular ("1=Samsung",
+"2=Motorola", 3=Huawei) de sus productos.
+
+El valor de cada marca es:
+    1- Samsung 600.000
+    2- Motorola 500.000
+    3- Huawei 550.000
+
+Una vez ingresados los datos, el algoritmo debe permitir calcular:
+    Cuantos son de cada marca.
+    Cuantos se vendieron por marca.
+    Valor total de cada marca vendida.
+    Si la cantidad de cada producto es superior a 10 reciben 5% descuento. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2-2.js"></script>
+</head>
+<body>
+    <form action="#" >
+
+        <h2>Estas son las marcas y precios que maneja la empresa ¿Estas interesado?</h2>
+
+        <h3>1= Samsung 600.000</h3>
+        <h3>2= Motorola 500.000</h3>
+        <h3>3= Huawei 550.000</h3>
+
+        <h3>Ingresa los equipos que deseas llevar</h3>
+        <h4>¿Cuantos de Samsung?</h4>
+        <input step ="any" type="number" id="samsung" placeholder="Ingresa cantidad">
+        <h4>¿Cuantos de Motorola?</h4>
+        <input step ="any" type="number" id="motorola" placeholder="Ingresa cantidad">
+        <h4>¿Cuantos de Huawei?</h4>
+        <input step ="any" type="number" id="huawei" placeholder="Ingresa cantidad"><br><br>
+
+        <button type="submit" onclick="calcular()">Enviar</button><br><br>
+
+        <p id="cantidadPorMarca"></p>
+        <p id="cantidadPorMarca2"></p>
+        <p id="precioPorMarca"></p>
+        <p id="precioPorMarca2"></p>        
+        <p id="valoPorMarca"></p>
+
+        <p id="mensaje"></p>
+
+        <p id="descuento"></p>
+
+    </form>
+
+</body>
+</html>

@@ -46,7 +46,7 @@ document.getElementById("ventaForm").addEventListener("submit", function(event) 
     var precioUnitario = precios[marca];
     
     var totalVenta = cantidad * precioUnitario;
-    var descuento = cantidad >= 10 ? totalVenta * 0.05 : 0;
+    var descuento = cantidad > 10 ? totalVenta * 0.05 : 0;
     var precioConDescuento = totalVenta - descuento;
     
     var marcaNombre = obtenerNombreMarca(marca);

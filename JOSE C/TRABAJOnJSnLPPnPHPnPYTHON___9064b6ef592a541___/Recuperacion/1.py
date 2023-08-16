@@ -17,7 +17,7 @@ while True:
 
 while True:
     nombre_producto = input("Ingrese nombre del producto: ")
-    if nombre_producto.isalpha():
+    if nombre_producto:
         break
     else:
         print("Ingresa solo texto,Inténtalo de nuevo.")
