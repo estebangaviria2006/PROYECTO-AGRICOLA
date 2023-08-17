@@ -24,11 +24,18 @@
 <h3>Venta:</h3>
 <p id="resultados"></p>
 
+<button id="reiniciarVentas">Reiniciar Ventas</button>
+
 <script>
+                                     /* Registra un evento a un objeto en específico */
 document.getElementById("ventaForm").addEventListener("submit", function(event) {
+
+        /* cancela el evento, lo que significa que cualquier acción por defecto que deba producirse como resultado de este evento, no ocurrirá */
   event.preventDefault();
   
   var marca = document.getElementById("marca").value;
+
+                 /* La función parseInt comprueba el primer argumento, una cadena, e intenta devolver un entero de la base especificada */
   var cantidad = parseInt(document.getElementById("cantidad").value);
   
   if (cantidad <= 0) {
@@ -41,7 +48,7 @@ document.getElementById("ventaForm").addEventListener("submit", function(event) 
     motorola: 500000,
     huawei: 550000
   };
-  
+              /* Este método puede ser usando para determinar si un objeto tiene la propiedad especificada como una propiedad directa de ese objeto */
   if (precios.hasOwnProperty(marca)) {
     var precioUnitario = precios[marca];
     
@@ -56,7 +63,8 @@ document.getElementById("ventaForm").addEventListener("submit", function(event) 
                     "Valor Unitario: $" + precioUnitario.toLocaleString() + "<br>" +
                     "Total Venta: $" + totalVenta.toLocaleString() + "<br>";
     
-    if (descuento > 0) {
+    if (descuento > 0) {                           /* Los nuevos argumentos locales y options permiten a las aplicaciones especificar el idioma 
+                                                   cuyas convenciones de formato deben usarse y personalizar el comportamiento de la función */
       resultado += "Descuento (5%): $" + descuento.toLocaleString() + "<br>";
       resultado += "Precio con Descuento: $" + precioConDescuento.toLocaleString() + "<br>";
     }
@@ -64,13 +72,23 @@ document.getElementById("ventaForm").addEventListener("submit", function(event) 
     document.getElementById("resultados").innerHTML += resultado + "<br>";
   }
 });
+                                          /* addEventListener() Registra un evento a un objeto en específico. 
+                                          El Objeto especifico puede ser un simple elemento en un archivo, el mismo documento o una ventana */
+document.getElementById("reiniciarVentas").addEventListener("click", function() {
+  document.getElementById("resultados").innerHTML = "";
+});
 
 function obtenerNombreMarca(marca) {
+   /*switch evalúa una expresión, comparando el valor de esa expresión con una instancia case , 
+  y ejecuta declaraciones asociadas a ese case , así como las declaraciones en los case que siguen */
   switch (marca) {
+
+    /* una instancia case es usada para ser comparada con la expresión . Si la expresión coincide con el valor, 
+    las declaraciones dentro de la instancia case se ejecutan hasta que se encuentre el final de la declaración una interrupción break . */
     case "samsung":
       return "Samsung";
     case "motorola":
-      return "Motorola";
+      return "Motorola"; /* return devuelve el control del programa al módulo que lo invoca */
     case "huawei":
       return "Huawei";
     default:
@@ -85,5 +103,4 @@ function mostrarError(mensaje) {
 
 </body>
 </html>
-
 
